@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://c6yuodufi33d7"]
+
+[ext_resource type="Texture2D" uid="uid://savjs37jo2af" path="res://assets/art/Tiny Swords (Update 010)/Terrain/Water/Rocks/Rocks_02.png" id="1_aw5hh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1v76"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ct7aa"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocj2s"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_din8e"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bh5q"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e124b"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_101mb"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbo4f"]
+atlas = ExtResource("1_aw5hh")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ctvyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1v76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ct7aa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocj2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_din8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bh5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e124b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_101mb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbo4f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="rock_2" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ctvyo")
+animation = &"idle"
+autoplay = "idle"
+frame = 5
+frame_progress = 0.887786

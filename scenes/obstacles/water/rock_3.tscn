@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://snmbdx225tjp"]
+
+[ext_resource type="Texture2D" uid="uid://ejrwj3ea2vbf" path="res://assets/art/Tiny Swords (Update 010)/Terrain/Water/Rocks/Rocks_03.png" id="1_q5l6i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0p65s"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gl33c"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhp8l"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wslvr"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0opd"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cl5yx"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ni6q8"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjhx4"]
+atlas = ExtResource("1_q5l6i")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4gpt4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0p65s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gl33c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uhp8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wslvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0opd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cl5yx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ni6q8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjhx4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="rock_3" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_4gpt4")
+animation = &"idle"
+autoplay = "idle"

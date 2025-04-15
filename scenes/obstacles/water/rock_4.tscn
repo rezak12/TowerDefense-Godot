@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://bbqgki8xo5j5j"]
+
+[ext_resource type="Texture2D" uid="uid://h6d8pppl3rpi" path="res://assets/art/Tiny Swords (Update 010)/Terrain/Water/Rocks/Rocks_04.png" id="1_0pfu4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wpb2s"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkxap"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7cfr"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gshjq"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmcd1"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjnme"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjh7h"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7umsx"]
+atlas = ExtResource("1_0pfu4")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xtwns"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wpb2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkxap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7cfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gshjq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmcd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjnme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjh7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7umsx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="rock_4" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_xtwns")
+animation = &"idle"
+autoplay = "idle"

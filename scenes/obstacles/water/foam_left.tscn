@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://d15vrsge3n3qt"]
+
+[ext_resource type="Texture2D" uid="uid://rytowkpfd8tx" path="res://assets/art/Tiny Swords (Update 010)/Terrain/Water/Foam/Foam.png" id="1_5q781"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqsjy"]
+atlas = ExtResource("1_5q781")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_55vhl"]
+atlas = ExtResource("1_5q781")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qifq"]
+atlas = ExtResource("1_5q781")
+region = Rect2(384, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayigw"]
+atlas = ExtResource("1_5q781")
+region = Rect2(576, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1pjtj"]
+atlas = ExtResource("1_5q781")
+region = Rect2(768, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_644q4"]
+atlas = ExtResource("1_5q781")
+region = Rect2(960, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_licjc"]
+atlas = ExtResource("1_5q781")
+region = Rect2(1152, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amr00"]
+atlas = ExtResource("1_5q781")
+region = Rect2(1344, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cyo5y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqsjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_55vhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qifq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayigw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1pjtj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_644q4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_licjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amr00")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="foam_left" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_cyo5y")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.141483

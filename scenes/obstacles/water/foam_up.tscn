@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://gii34uascgu2"]
+
+[ext_resource type="Texture2D" uid="uid://rytowkpfd8tx" path="res://assets/art/Tiny Swords (Update 010)/Terrain/Water/Foam/Foam.png" id="1_4mq6s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t64x0"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3mt1"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f2h7p"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fk0k"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xg2vm"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(832, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shohj"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(1024, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mo5do"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(1216, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj8v4"]
+atlas = ExtResource("1_4mq6s")
+region = Rect2(1408, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2dtq1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t64x0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3mt1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f2h7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fk0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xg2vm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shohj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mo5do")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj8v4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="foam_up" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_2dtq1")
+animation = &"idle"
+autoplay = "idle"
+frame = 1
+frame_progress = 0.470212
